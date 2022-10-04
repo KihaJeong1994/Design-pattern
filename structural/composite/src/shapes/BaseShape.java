@@ -60,13 +60,13 @@ abstract class BaseShape implements Shape{
         }
     }
 
-    private void disableSelectionStyle(Graphics graphics) {
+    void disableSelectionStyle(Graphics graphics) {
         graphics.setColor(color);
         Graphics2D g2 = (Graphics2D) graphics;
         g2.setStroke(new BasicStroke());
     }
 
-    private void enableSelectionStyle(Graphics graphics) {
+    void enableSelectionStyle(Graphics graphics) {
         graphics.setColor(Color.LIGHT_GRAY);
         Graphics2D g2 = (Graphics2D)graphics;
         float dash1[] = {2.0f};
